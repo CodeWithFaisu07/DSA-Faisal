@@ -1,5 +1,5 @@
 package String;
-
+import java.util.Objects;
 public class TotalNumberOfString {
     static void main() {
         String name = "Faisal";
