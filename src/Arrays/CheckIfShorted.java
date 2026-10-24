@@ -8,22 +8,33 @@ public class CheckIfShorted {
         System.out.print("Enter Size of Array");
         int n = sc.nextInt();
         int[] arr = new int[n];
+
+
         //taking input from user
         for (int i = 0; i <n ; i++) {
             arr[i]=sc.nextInt();
-
         }
-        //to print ouput
+
+
+        // if user wants to make 0 size of Array
+        if (n == 0){
+            System.out.println("Invalid Array Size");
+            return;
+        }
+
+        //Condition Cheak Given Array is Sorted or Not
+        boolean isSorted= true;
         for(int i = 0; i <n ; i++) {
             if(arr[i]>arr[i+1]) {
-                System.out.println("not soted");
+                isSorted = false;
                 break;
-
-            } else System.out.println("arr is sorted");
-            break;
-
+            }
         }
-
-
+        if (isSorted==false) {
+            System.out.println("array is not sorted Sort it now");
+        } else if (isSorted == true) {
+            System.out.println("Congrats! your Array is Sorted...");
+        }
+        
     }
 }
