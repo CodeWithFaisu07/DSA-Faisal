@@ -7,7 +7,7 @@ public class DutchFlagAlgorithem {
             System.out.print(ele+",");
         }
 
-        //method one
+        //method  -> brute
 //        int noofZeros = 0 ;
 //        int noofOnes = 0;
 //        int noofTwos = 0;
@@ -24,7 +24,7 @@ public class DutchFlagAlgorithem {
 //            else arr[i] = 2;
 //        }
 
-        // method no 2 : A professional Method
+        // method no 2 : A professional Method   ->Optimal
         int n = arr.length;
         int i = 0 ; int j = 0; int k = n-1;
         while (i<k){
