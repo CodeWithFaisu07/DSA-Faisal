@@ -11,7 +11,7 @@ public class CheckIfShorted {
 
 
         //taking input from user
-        for (int i = 0; i <n-1 ; i++) {
+        for (int i = 0; i <n ; i++) {
             arr[i]=sc.nextInt();
         }
 
@@ -25,7 +25,7 @@ public class CheckIfShorted {
 
         //Condition Cheak Given Array is Sorted or Not
         boolean isSorted= true;
-        for(int i = 0; i <n ; i++) {  // treversing Pattern
+        for(int i = 0; i <n-1 ; i++) {  // treversing Pattern
             if(arr[i]>arr[i+1]) {
                 isSorted = false;
                 break;
